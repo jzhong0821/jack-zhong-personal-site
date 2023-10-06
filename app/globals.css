@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.shifted-image {
+  transform: translateX(-50px); /* Adjust the value based on how much shift you want */
+}
+
+.spinning-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* place it behind your content */
+  width: 100vw;
+  height: 100vh;
+  animation: spin 60s infinite linear;
+}
+
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
