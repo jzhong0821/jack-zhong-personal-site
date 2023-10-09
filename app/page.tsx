@@ -16,7 +16,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            What's up, this is 
+            What&apos;s up, this is 
           </a>
         </div>
       </div>
